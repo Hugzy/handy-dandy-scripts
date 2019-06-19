@@ -1,0 +1,2 @@
+docker volume create nessus_scanner_var
+docker run -t -v nessus_scanner_var:/opt/nessus/var/nessus -e LICENSE=547B-7772-A4E4-CDDC-3F02 -e SCANNER_NAME=nessus_scanner --name nessus_scanner stevemcgrath/nessus_scanner:latest
