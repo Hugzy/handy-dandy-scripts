@@ -1,0 +1,1 @@
+FOR /F %%A IN ('docker container ps -a -q') DO docker container rm %%A
