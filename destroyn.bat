@@ -1,0 +1,1 @@
+FOR /F %%A IN ('docker network ls -q') DO IF /I NOT %* == %%A docker network rm %%A
